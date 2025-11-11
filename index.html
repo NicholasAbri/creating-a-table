@@ -1,49 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table</title>
-</head>
-<body>
+  </head>
+  <body>
+
+    <!-- Table heading -->
+     <h2>Table Data</h2>
 
     <!-- Creating a table -->
     <table border="1" cellspacing="0" cellpadding="1">
-        <tr>
-            <th>Player</th>
-            <th>Club</th>
-            <th>Nationality</th>
-        </tr>
-        <tr>
-            <td>Messi</td>
-            <td>InterMiami</td>
-            <td>Argentine</td>
-        </tr>
-        <tr>
-            <td>Ronaldo</td>
-            <td>Al-Nassr</td>
-            <td>Portugeese</td>
-        </tr>
-        <tr>
-            <td>Vinicius</td>
-            <td>Real Madrid</td>
-            <td>Brazilian</td>
-        </tr>
-        <tr>
-            <td>Lamine Yamal</td>
-            <td>Barcelona</td>
-            <td>Spanish</td>
-        </tr>
-        <tr>
-            <td>Mohammed Kudus</td>
-            <td>Tottenham</td>
-            <td>Ghanaian</td>
-        </tr>
-        <tr>
-            <td>Erling Haaland</td>
-            <td>Manchester City</td>
-            <td>Norwegian</td>
-        </tr>
+      <tr>
+        <th>Player</th>
+        <th>Club</th>
+        <th>Nationality</th>
+      </tr>
+      <tr>
+        <td>Messi</td>
+        <td>InterMiami</td>
+        <td>Argentine</td>
+      </tr>
+      <tr>
+        <td>Ronaldo</td>
+        <td>Al-Nassr</td>
+        <td>Portugeese</td>
+      </tr>
+      <tr>
+        <td>Vinicius</td>
+        <td>Real Madrid</td>
+        <td>Brazilian</td>
+      </tr>
+      <tr>
+        <td>Lamine Yamal</td>
+        <td>Barcelona</td>
+        <td>Spanish</td>
+      </tr>
+      <tr>
+        <td>Mohammed Kudus</td>
+        <td>Tottenham</td>
+        <td>Ghanaian</td>
+      </tr>
+      <tr>
+        <td>Erling Haaland</td>
+        <td>Manchester City</td>
+        <td>Norwegian</td>
+      </tr>
     </table>
-</body>
+    <br><br><br>
+
+    <!-- Form heading -->
+    <h2>Signup Form</h2>
+
+    <!-- Signup Form -->
+    <form action="./info.html">
+      <label for="fullname">Full Name:</label>
+      <input type="text" name="fullname" id="fullname" required>
+      <br>
+      <br>
+      <label for="age">Age:</label>
+      <input type="number" name="age" id="age" required>
+      <br>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required>
+      <br>
+      <br>
+      <label for="interest-in-sports">Are you interest-in-sports:</label>
+      <input type="radio" name="interest-in-sports" id="interest-in-sports" value="Yes" required>Yes
+      <input type="radio" name="interest-in-sports" id="interest-in-sports" value="No" required>No
+      <br>
+      <br>
+      <label for="type-of-sports">Select preferred sport:</label>
+      <select name="type-of-sports" id="type-of-sports">
+        <option value="" disabled selected></option>
+        <option value="football">Football</option>
+        <option value="basketball">Basketball</option>
+        <option value="tennis">Tennis</option>
+        <option value="baseball">Baseball</option>
+        <option value="badminton">Badminton</option>
+      </select>
+      <br>
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" required>
+      <br>
+      <br>
+      <label for="password">Repeat password:</label>
+      <input type="password" name="password" id="password" required>
+      <br>
+      <br>
+      <input type="submit" value="Submit form">
+    </form>
+  </body>
 </html>
